@@ -1,2 +1,2 @@
-# fraud_detection_card_transsctions
+# fraud_detection_card_transactions
 Fraud Detection Analytics for Card Transactions
