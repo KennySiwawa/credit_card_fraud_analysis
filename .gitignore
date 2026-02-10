@@ -1,0 +1,261 @@
+# ===================================================================
+# .gitignore for Fraud Detection Analytics Card Transactions Project
+# Author: Kenny Siwawa Chikwama
+# ===================================================================
+
+# ==================== DATA FILES (MOST IMPORTANT) ====================
+# DO NOT upload large datasets to GitHub
+# Download from: https://www.kaggle.com/datasets/...
+
+# Raw data from Kaggle
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.xls
+data/raw/*.json
+data/raw/*.parquet
+
+# Processed/cleaned data
+data/processed/*.csv
+data/processed/*.xlsx
+data/processed/*.parquet
+data/processed/*.pkl
+data/processed/*.pickle
+
+# Keep folder structure visible on GitHub
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/sample/.gitkeep
+
+# Exception: Allow small sample datasets (under 10MB) for demo purposes
+!data/sample/sample_fraud_data.csv
+!data/sample/sample_transactions.csv
+
+# ==================== DATABASE FILES ====================
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+data/database/*.db
+
+# SQL dumps (if large)
+*.sql.gz
+data/*.dump
+
+# ==================== JUPYTER NOTEBOOK ====================
+# Checkpoint files created by Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Jupyter Notebook backup files
+*.ipynb~
+*.ipynb.backup
+
+# Jupyter configuration
+.jupyter/
+
+# ==================== PYTHON ====================
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environment folders
+venv/
+env/
+ENV/
+.venv/
+fraud-env/
+analytics-env/
+
+# Python distribution/packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# ==================== TABLEAU ====================
+# Tableau temporary/backup files
+*.twb~
+*.twbx~
+
+# Tableau log files
+*.log.txt
+
+# Large Tableau packaged workbooks (optional - uncomment if files are too large)
+# visualizations/tableau/*.twbx
+
+# Tableau extracts (can be very large)
+*.hyper
+*.tde
+
+# ==================== GOOGLE SHEETS ====================
+# Downloaded Google Sheets exports
+*.gsheet
+data/google_sheets_exports/*.csv
+
+# Google API credentials (IMPORTANT: Never commit these!)
+credentials.json
+token.json
+client_secret*.json
+
+# ==================== SQL FILES ====================
+# Keep queries but ignore large dumps
+sql/dumps/*.sql
+sql/*.dump
+
+# ==================== REPORTS & VISUALIZATIONS ====================
+# Large PDF reports (optional - uncomment if reports get too big)
+# reports/*.pdf
+# reports/findings/*.pdf
+
+# Temporary report files
+reports/*.tmp
+reports/*.docx~
+
+# Large image files from visualizations (optional)
+# visualizations/charts/*.png
+# visualizations/charts/*.jpg
+
+# ==================== OPERATING SYSTEM FILES ====================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ==================== IDE & EDITORS ====================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Jupyter Lab
+.jupyter/
+.ipython/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+*.sublime-session
+
+# Spyder
+.spyderproject
+.spyproject
+
+# ==================== ENVIRONMENT VARIABLES ====================
+# Never commit API keys, passwords, or credentials!
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Configuration files with sensitive data
+config/secrets.py
+config/credentials.py
+
+# ==================== LOGS ====================
+# Application logs
+*.log
+logs/
+*.log.*
+
+# Python logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==================== TEMPORARY FILES ====================
+# General temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Cache files
+.cache/
+*.cache
+
+# ==================== COMPRESSED/ARCHIVE FILES ====================
+# Large compressed files
+*.zip
+*.tar.gz
+*.tar
+*.rar
+*.7z
+*.gz
+
+# Exception: Keep small documentation archives if needed
+!docs/*.zip
+
+# ==================== PROJECT-SPECIFIC ====================
+# Fraud detection model files (if they get large)
+models/*.h5
+models/*.pkl
+models/*.joblib
+models/*.model
+
+# Large exploratory notebooks (optional backup copies)
+notebooks/*_backup.ipynb
+notebooks/*_old.ipynb
+
+# Scratch/test files
+scratch/
+test_*.py
+temp_*.py
+
+# Output files from analysis
+output/
+results/*.csv
+
+# ==================== MISC ====================
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Package managers
+*.lock
+
+# End of .gitignore
