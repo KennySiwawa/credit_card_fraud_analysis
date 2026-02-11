@@ -1,0 +1,15 @@
+KPI,Value
+Total Transactions,"1,296,675"
+Fraudulent Transactions,"7,506"
+Legitimate Transactions,"1,289,169"
+Overall Fraud Rate (%),0.5789%
+Total Transaction Amount,"$91,222,428.90"
+Total Fraud Amount,"$3,988,088.61"
+Total Legitimate Amount,"$87,234,340.29"
+Average Fraud Transaction,$531.32
+Average Legitimate Transaction,$67.67
+Fraud Amount as % of Total,4.37%
+Number of Unique Merchants,693
+Number of Unique Cardholders,983
+Number of Transaction Categories,14
+Date Range,2019-01-01 00:00:18 to 2020-06-21 12:13:37
