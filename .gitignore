@@ -15,11 +15,11 @@ data/raw/*.json
 data/raw/*.parquet
 
 # Processed/cleaned data
-data/processed/*.csv
-data/processed/*.xlsx
-data/processed/*.parquet
-data/processed/*.pkl
-data/processed/*.pickle
+data/cleaned/*.csv
+data/cleaned/*.xlsx
+data/cleaned/*.parquet
+data/cleaned/*.pkl
+data/cleaned/*.pickle
 
 # Keep folder structure visible on GitHub
 !data/raw/.gitkeep
