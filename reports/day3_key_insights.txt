@@ -1,0 +1,10 @@
+================================================================================
+DAY 3 - KEY INSIGHTS FROM EXPLORATORY DATA ANALYSIS
+================================================================================
+
+1. 💰 Fraudulent transactions are 685.2% HIGHER than legitimate ($531.32 vs $67.67)
+2. 🛒 Highest fraud rate: shopping_net (2.00%)
+3. ⏰ Peak fraud hour: 22:00 (2.880% fraud rate)
+4. 📅 Weekday has higher fraud rate (0.600%)
+5. 🌙 Night transactions have higher fraud rate (1.660%)
+6. 🗺️ Far transactions have higher fraud rate (0.580%)
