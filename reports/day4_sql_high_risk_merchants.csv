@@ -1,0 +1,21 @@
+merchant,category,total_transactions,fraud_count,fraud_rate_pct,total_amount,fraud_amount
+fraud_Rau and Sons,grocery_pos,2490,49,1.97,298354.77,15299.76
+fraud_Kozey-Boehm,shopping_net,1866,48,2.57,183312.29,48189.98
+fraud_Doyle Ltd,grocery_pos,2558,47,1.84,300971.37,14807.91
+fraud_Vandervort-Funk,grocery_pos,2474,47,1.9,292542.99,14973.76
+fraud_Cormier LLC,shopping_net,1959,45,2.3,176265.24,44845.95
+fraud_Padberg-Welch,grocery_pos,2424,44,1.82,279775.98,13713.45
+fraud_Terry-Huel,shopping_net,1996,43,2.15,186191.02,42356.37
+fraud_Goyette Inc,shopping_net,1943,42,2.16,182472.25,41580.84
+fraud_Jast Ltd,shopping_net,1953,42,2.15,176525.38,42560.34
+fraud_Koepp-Witting,grocery_pos,2437,42,1.72,284969.03,13005.78
+fraud_Kerluke-Abshire,shopping_net,1838,41,2.23,180189.07,40909.57
+fraud_Kiehn-Emmerich,grocery_pos,2497,41,1.64,291123.14,12796.53
+fraud_McDermott-Weimann,grocery_pos,2524,41,1.62,295131.49,12664.79
+"fraud_Schmeler, Bashirian and Price",shopping_net,1968,41,2.08,190341.8,40143.05
+fraud_Gleason-Macejkovic,shopping_net,2033,40,1.97,175028.52,39892.84
+fraud_Hudson-Ratke,grocery_pos,2476,40,1.62,288718.76,12598.61
+fraud_Kilback LLC,grocery_pos,2531,40,1.58,294267.31,12210.06
+"fraud_Moen, Reinger and Murphy",grocery_pos,2378,40,1.68,282162.8,12298.05
+fraud_Murray-Smitham,grocery_pos,2510,40,1.59,296982.73,12671.23
+fraud_Bailey-Morar,grocery_pos,2430,39,1.6,284945.46,12240.57
