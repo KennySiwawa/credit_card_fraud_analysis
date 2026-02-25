@@ -1,11 +1,11 @@
 
-# Fraud Detection Analytics for Card Transactions
+# Credit Card Fraud Analysis
 
-A comprehensive data analytics project that analyzes online payment transaction dat to identify fraudulent behaviour patterns and financial risk indicators.
+A comprehensive data analytics project that analyzes online payment transaction data to identify fraudulent behaviour patterns and financial risk indicators.
 
 ## 🎯 Project Overview
 
-This project focuses on detenting anomalies, classifying transactions, and evaluating fraud probability based on transaction behavior and account balance changes in digital payment systems.
+This project focuses on detecting anomalies, classifying transactions, and evaluating fraud probability based on transaction behavior and account balance changes in digital payment systems.
 
 📋 Objectives
 
@@ -36,7 +36,7 @@ This project focuses on detenting anomalies, classifying transactions, and evalu
 
 ## 📊 Dataset
 
-**Source:** [Credit Card Transactions Fraud Detection Dataset | Kaggle](https://www.kaggle.com/datasets)
+**Source:** [Credit Card Transactions Fraud Detection Dataset | Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 
 The dataset includes:
 - Transaction amounts
@@ -53,8 +53,8 @@ The dataset includes:
 
 ```bash
 Python 3.8+
-SQL database (PostgreSQL/MySQL/SQLite)
-Tableau Desktop or Tableau Public
+SQL database (Google BigQuery)
+Looker Studio
 Jupyter Notebook
 ```
 
@@ -62,8 +62,8 @@ Jupyter Notebook
 
 ```bash
 # Clone the repository
-git clone https://github.com/KennySiwawa/fraud_detection_card_transactions.git
-cd fraud-detection-card-transactions
+git clone https://github.com/credit_card_fraud_analysis.git
+cd credit_card_fraud_analysis
 
 # Install required Python packages
 pip install -r requirements.txt
@@ -89,31 +89,27 @@ scipy
 ```
 ├── data/
 │   ├── raw/                    # raw data
-│   ├── processed/              # Cleaned and transformed data
-│   └── database/               # SQL database files
+│   └── cleaned/                # Cleaned and transformed data
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb
+│   ├── 01_data_understanding.ipynb
 │   ├── 02_data_cleaning.ipynb
-│   ├── 03_fraud_analysis.ipynb
-│   └── 04_risk_assessment.ipynb
+│   ├── 03_Explaratory_Data_Analysis.ipynb
+│   └── 04_sql_analysis.ipynb
+├── reports/
+│   └──                         # Analysis reports
+├── scripts/
+│   └── prepare_looker_data.py
 ├── sql/
 │   ├── queries/                # SQL queries for analysis
-│   └── schema.sql              # Database schema
 ├── visualizations/
-│   ├── tableau/                # Tableau workbooks
-│   └── charts/                 # Exported charts and graphs
-├── reports/
-│   └── findings/               # Analysis reports
-├── scripts/
-│   ├── data_processing.py
-│   ├── anomaly_detection.py
-│   └── fraud_classifier.py
+│   ├── charts/                 # Final Dashboard
+│   └── LookerStudio/           # Final Dashboard
 └── README.md
 ```
 
 ## 🔍 Analysis Approach
 
-### 1. Data Exploration
+### 1. Data Understanding
 - Understanding transaction patterns
 - Identifying data quality issues
 - Statistical summary of transactions
@@ -146,7 +142,7 @@ scipy
 - Risk level categorization (Low/Medium/High)
 
 ### 5. Visualization & Reporting
-- Interactive Tableau dashboards
+- Interactive Looker Studio dashboards
 - Trend analysis charts
 - Geographic heat maps
 - Risk distribution graphs
@@ -190,14 +186,10 @@ This is an academic/portfolio project. Suggestions and feedback are welcome!
 4. Push to the branch (`git push origin feature/improvement`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
 - Kaggle for providing the fraud detection dataset
-- Financial analytics research community
 - Open-source data analysis tools and libraries
 
 ## 📧 Contact
