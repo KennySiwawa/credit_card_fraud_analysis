@@ -1,88 +1,47 @@
-
 # Credit Card Fraud Analysis
 
-A comprehensive data analytics project that analyzes online payment transaction data to identify fraudulent behaviour patterns and financial risk indicators.
+A data analytics project focused on uncovering fraud patterns, transaction anomalies, and financial risk indicators in digital payment systems using Python, SQL, and data visualization tools.
+
+---
 
 ## 🎯 Project Overview
 
-This project focuses on detecting anomalies, classifying transactions, and evaluating fraud probability based on transaction behavior and account balance changes in digital payment systems.
+This project performs **exploratory data analysis (EDA)** on credit card transactions to identify fraud trends, behavioral patterns, and key risk indicators that can support fraud prevention strategies.
 
-📋 Objectives
+---
 
-- **Identify fraudulent behavior patterns** in digital payment transactions
-- **Detect anomalies** in transaction data
-- **Classify transactions** as legitimate or fraudulent
-- **Evaluate fraud probability** based on transaction behavior
-- **Analyse account balance changes** to identify suspicious activities
-- **Assess financial risk indicators** accross payment plartforms
+## 📋 Objectives
 
-## ✨ Key Features
+* Identify **fraudulent transaction patterns**
+* Detect **anomalies in transaction behavior**
+* Analyze **high-risk transaction characteristics**
+* Examine **account balance changes linked to fraud**
+* Evaluate **financial risk indicators across transactions**
 
-- Transaction behavior analysis
-- Account balance change tracking
-- Fraud probability scoring
-- Anomaly detection in payment patterns
-- Risk indicator identification
-- Interactive data visualizations
-- Comprehensive fraud reports
+---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- **Python** - Data analysis and processing
-- **SQL** - Database querying and data manipulation
-- **Tableau** - Data visualization and dashboards
-- **Jupyter Notebook** - Exploratory data analysis
-- **Google Sheets** - Data collaboration and reporting
+* **Python** (Pandas, NumPy, Matplotlib, Seaborn)
+* **SQL** (BigQuery)
+* **Data Visualization** (Tableau / Looker Studio)
+* **Jupyter Notebook**
+
+---
 
 ## 📊 Dataset
 
-**Source:** [Credit Card Transactions Fraud Detection Dataset | Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
+**Source:**  [Credit Card Transactions Fraud Detection Dataset | Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 
 The dataset includes:
-- Transaction amounts
-- Transaction timestamps
-- Merchant information
-- Account balances
-- Transaction types
-- Customer demographics
-- Geographic data
 
-## 🚀 Getting Started
+* Transaction amounts and timestamps
+* Merchant and transaction types
+* Account balances
+* Customer demographics
+* Geographic information
 
-### Prerequisites
-
-```bash
-Python 3.8+
-SQL database (Google BigQuery)
-Looker Studio
-Jupyter Notebook
-```
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/credit_card_fraud_analysis.git
-cd credit_card_fraud_analysis
-
-# Install required Python packages
-pip install -r requirements.txt
-
-# Launch Jupyter Notebook
-jupyter notebook
-```
-
-### Required Python Libraries
-
-```txt
-pandas
-numpy
-matplotlib
-seaborn
-sqlalchemy
-plotly
-scipy
-```
+---
 
 ## 📁 Project Structure
 
@@ -107,96 +66,93 @@ scipy
 └── README.md
 ```
 
+---
+
 ## 🔍 Analysis Approach
 
 ### 1. Data Understanding
-- Understanding transaction patterns
-- Identifying data quality issues
-- Statistical summary of transactions
 
-### 2. Data Cleaning & Preprocessing
-- Handling missing values
-- Removing duplicates
-- Feature engineering
-- Data normalization
+* Explored transaction distributions and dataset structure
+* Identified data quality issues
 
-### 3. Fraud Detection Analysis
-- **Transaction Behavior Analysis**
-  - Transaction frequency patterns
-  - Unusual transaction amounts
-  - Time-based anomalies
-  
-- **Account Balance Analysis**
-  - Balance depletion patterns
-  - Rapid balance changes
-  - Negative balance occurrences
+### 2. Data Cleaning
 
-- **Risk Indicators**
-  - High-value transactions
-  - Geographic anomalies
-  - Merchant category risks
+* Handled missing values and duplicates
+* Performed feature engineering
 
-### 4. Classification & Scoring
-- Binary classification (Fraud/Legitimate)
-- Fraud probability scoring
-- Risk level categorization (Low/Medium/High)
+### 3. Exploratory Data Analysis
 
-### 5. Visualization & Reporting
-- Interactive Looker Studio dashboards
-- Trend analysis charts
-- Geographic heat maps
-- Risk distribution graphs
+* Transaction behavior patterns
+* Fraud distribution across time, category, and geography
+* Account balance change analysis
 
-## 📈 Key Metrics & KPIs
+### 4. Risk Analysis
 
-- **Fraud Rate**: Percentage of fraudulent transactions
-- **Average Fraud Amount**: Mean value of fraudulent transactions
-- **Detection Accuracy**: Correctly identified fraud cases
-- **False Positive Rate**: Legitimate transactions flagged as fraud
-- **Risk Score Distribution**: Breakdown of transaction risk levels
+* High-value transaction patterns
+* Merchant-level fraud concentration
+* Geographic fraud trends
 
-## 📊 Sample Visualizations
+### 5. Visualization
 
-The project includes:
-- Transaction volume over time
-- Fraud vs. legitimate transaction comparison
-- Geographic distribution of fraud
-- Fraud probability distribution
-- Account balance change patterns
-- Top risk indicators dashboard
+* Interactive dashboards
+* Time-series fraud trends
+* Category and geographic breakdowns
 
-## 🔎 Key Findings
+---
 
-*This section will be updated with analysis results*
+## 📈 Key Metrics
 
+* **Fraud Rate**
+* **Fraudulent Transaction Value (%)**
+* **Fraud Count by Category**
+* **Fraud by Time (Monthly Trends)**
+* **Fraud Distribution by Geography**
+
+---
+
+## 🔎 Key Insights
+
+* Fraud transactions are rare (**0.60%**) but account for a **disproportionately high financial impact (4.62%)**, indicating targeting of high-value transactions.
+
+* Fraud is concentrated in specific categories, particularly **online shopping and point-of-sale transactions**, making them critical monitoring areas.
+
+* **High-value transactions** are significantly more likely to be fraudulent, making transaction size a strong risk indicator.
+
+* Fraud activity shows **clear temporal patterns**, with peaks during certain months, suggesting non-random behavior.
+
+* Fraud is **geographically concentrated**, indicating that regional risk-based monitoring could improve detection.
+
+* A small number of merchants contribute disproportionately to fraud cases, highlighting **merchant-specific vulnerabilities**.
+
+---
+
+## 💼 Business Implications
+
+* Prioritizing **high-value and high-risk category transactions** can reduce financial losses
+* **Time-based monitoring systems** can improve fraud detection efficiency
+* **Merchant-level risk scoring** can help identify weak points in the transaction ecosystem
+* Geographic insights enable **targeted fraud prevention strategies**
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/credit_card_fraud_analysis.git
+cd credit_card_fraud_analysis
+pip install -r requirements.txt
+jupyter notebook
+```
+
+---
 
 ## 👨‍💻 Author
 
 **Kenny Siwawa Chikwama**
-- GitHub: [@KennySiwawa](https://github.com/KennySiwawa)
-- Project Focus: Financial Data Analytics, Fraud Detection, Transaction Analysis, Risk Analysis, Data Visualization
-
-## 🤝 Contributing
-
-This is an academic/portfolio project. Suggestions and feedback are welcome!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-
-## 🙏 Acknowledgments
-
-- Kaggle for providing the fraud detection dataset
-- Open-source data analysis tools and libraries
-
-## 📧 Contact
-
-For questions or collaboration opportunities, please open an issue in this repository.
+Focus: Data Analytics | Financial Analysis | Fraud Detection
 
 ---
 
-**Disclaimer**: This project is for educational and portfolio purposes. Any insights or models should be validated before use in production environments.
-```
+## 📌 Note
+
+This project is for analytical and educational purposes. Insights should be validated before real-world deployment.
