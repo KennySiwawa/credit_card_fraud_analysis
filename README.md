@@ -56,8 +56,6 @@ The dataset includes:
 │   └── 04_sql_analysis.ipynb
 ├── reports/
 │   └──                         # Analysis reports
-├── scripts/
-│   └── prepare_looker_data.py
 ├── sql/
 │   ├── queries/                # SQL queries for analysis
 ├── visualizations/

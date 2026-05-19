@@ -1,0 +1,12 @@
+-- Dashboard KPI cards for BigQuery
+
+SELECT
+    COUNT(*) AS `TOTAL TRANSACTIONS`,
+    SUM(CASE WHEN is_fraud = 1 THEN 1 ELSE 0 END) AS `FRAUD TRANSACTIONS`,
+    ROUND(100 * SAFE_DIVIDE(SUM(CASE WHEN is_fraud = 1 THEN 1 ELSE 0 END), COUNT(*)), 2) AS `FRAUD RATE %`,
+    ROUND(SUM(amt), 2) AS `TOTAL AMOUNT`,
+    ROUND(SUM(CASE WHEN is_fraud = 1 THEN amt ELSE 0 END), 2) AS `FRAUDULENT AMOUNT`,
+    ROUND(100 * SAFE_DIVIDE(SUM(CASE WHEN is_fraud = 1 THEN amt ELSE 0 END), SUM(amt)), 2) AS `FRAUDULENT AMOUNT %`
+FROM `Credit_Card_Fraud_Analytics.fraud_data`;
+
+
