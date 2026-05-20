@@ -1,30 +1,24 @@
 # Credit Card Fraud Analysis
 
-
+An end-to-end analytics project that explores credit card transactions data to identify fraud patterns, quantify financial exposure, and highlight high-risk categories, merchants, states, and time periods.
 ---
 
 ## 🎯 Project Overview
 
-This project performs **exploratory data analysis (EDA)** on credit card transactions to identify fraud trends, behavioral patterns, and key risk indicators that can support fraud prevention strategies.
+This project analyzes traansaction-level credit card data to uncover fraud trends and support risk-based decision-making. The workflow combines data exploration in Python, query-based analysis in Bigquery, and dashboard development in Looker Studio to turn raw transaction data into actionable fraud insights.
 
 ---
 
-## 📋 Objectives
+## 📋 BUsiness Objectives
 
-* Identify **fraudulent transaction patterns**
-* Detect **anomalies in transaction behavior**
-* Analyze **high-risk transaction characteristics**
-* Examine **account balance changes linked to fraud**
-* Evaluate **financial risk indicators across transactions**
+The goal of this project is to answer key fraud-monitoring questions such as: 
 
----
+* How frequent are fraudelent transactions?
+* What share of transaction value is lost to fraud?
+* Which categories, merchants, and states show higher fraud concentration?
+* How does fraud activity change over time?
 
-## 🛠️ Tech Stack
-
-* **Python** (Pandas, NumPy, Matplotlib, Seaborn)
-* **SQL** (BigQuery)
-* **Data Visualization** (Tableau / Looker Studio)
-* **Jupyter Notebook**
+This type of analysis can support fraud analysts, risk teams, and financial institutions in prioritizing monitoring efforts and improving fraud prevention strategies.
 
 ---
 
@@ -32,13 +26,24 @@ This project performs **exploratory data analysis (EDA)** on credit card transac
 
 **Source:**  [Credit Card Transactions Fraud Detection Dataset | Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 
-The dataset includes:
+The dataset includes transaction-level attributes such as:
 
-* Transaction amounts and timestamps
-* Merchant and transaction types
-* Account balances
-* Customer demographics
+* Transaction ID and timestamp
+* Card type
+* Transaction amount
+* Merchant and category
+* State and city
 * Geographic information
+* Frad flag
+* Risk-related engineered fields
+
+---
+## Tech Stack
+
+- **Python**: Pandas, NumPy, Matplotlib, Seaborn
+- **SQL**: BigQuery Standard SQL
+- **Dash Visualisation**: Looker Studio
+- **Environment**: Jupyter Notebook
 
 ---
 
@@ -46,18 +51,26 @@ The dataset includes:
 
 ```
 ├── data/
-│   ├── raw/                    # raw data
+│   ├── raw/                    # Original Dataset
 │   └── cleaned/                # Cleaned and transformed data
 ├── notebooks/
-│   ├── 01_data_understanding.ipynb
+│   ├──  01_data_understanding.ipynb
 │   ├── 02_data_cleaning.ipynb
 │   └── 03_Explaratory_Data_Analysis.ipynb
 ├── reports/
 │   └──                         # Analysis reports
 ├── sql/
-│   └── dashboard_queries.sql   # SQL queries for analysis
+│   └── bigquery/
+│   │   ├── 01_kpis_bigquery.sql
+│   │   ├── 02_fraud_by_category_bigquery.sql
+│   │   ├── 03_fraud_by_state_bigquery.sql
+│   │   ├── 04_monthly_fraud_count_bigquery.sql
+│   │   ├── 05_top_high_risk_merchants_bigquery.sql
+│   │   ├── 06_filter_support_bigquery.sql
+│   │   └── 07_data_quality_checks_bigquery.sql
 ├── visualizations/
-│   └── LookerStudio/           # Final Dashboard
+│   └── LookerStudio/
+│       └── Credit Card Fraud Analysis Dashboard.png
 └── README.md
 ```
 
@@ -67,35 +80,49 @@ The dataset includes:
 
 ### 1. Data Understanding
 
-* Explored transaction distributions and dataset structure
-* Identified data quality issues
+* Reviewed dataset structure and column types
+* Explored transaction distribution and fraud frequency
+* Assessed data quality issues
 
-### 2. Data Cleaning
+### 2. Data Preparation
 
-* Handled missing values and duplicates
-* Performed feature engineering
+* Cleaned and standardized fields
+* Validated key analytical columns
+* Prepared the dataset for SQL-based reporting
 
-### 3. Exploratory Data Analysis
+### 3. SQL Analysis
 
-* Transaction behavior patterns
-* Fraud distribution across time, category, and geography
-* Account balance change analysis
+* KPI cards
+* Fraud by category
+* Fraud by state
+* Monthly fraud trend
+* Top high-risk merchants
+* Filter support and data quality checks
 
-### 4. Risk Analysis
+### 4. Dashboard Development
 
-* High-value transaction patterns
-* Merchant-level fraud concentration
-* Geographic fraud trends
-
-### 5. Visualization
-
-* Interactive dashboards
-* Time-series fraud trends
-* Category and geographic breakdowns
+Created an interactive dashboard in Looker Studio to visualize fraud exposure, category concentration, geographic distribution, merchant risk, and time-based trends.
 
 ---
 
-## 📈 Key Metrics
+## Key Metrics 
+
+The dashboard tracks:
+
+* **Total Transactions**
+* **Fraud Transactions**
+* **Fraud Rate (%)**
+* **Total Transaction Amount**
+* **Fraudulent Amount**
+* **Fraudulent Amount (%)**
+* **Fraud Count by Category**
+* **Fraud Count by State**
+* **Monthly Fraud Count**
+* **Top High-Risk Merchants**
+
+---
+
+## 📈 Key Insights
 
 * **Fraud Rate**
 * **Fraudulent Transaction Value (%)**
@@ -107,7 +134,7 @@ The dataset includes:
 
 ## 🔎 Key Insights
 
-* Fraud transactions are rare (**0.60%**) but account for a **disproportionately high financial impact (4.62%)**, indicating targeting of high-value transactions.
+* Fraud represented a small share of total transactions (**0.60%**) but a much larger share of transaction value (**4.62%**), indicating disproportionate financial exposure.
 
 * Fraud is concentrated in specific categories, particularly **online shopping and point-of-sale transactions**, making them critical monitoring areas.
 
