@@ -1,6 +1,5 @@
 # Credit Card Fraud Analysis
 
-A data analytics project focused on uncovering fraud patterns, transaction anomalies, and financial risk indicators in digital payment systems using Python, SQL, and data visualization tools.
 
 ---
 
@@ -52,14 +51,12 @@ The dataset includes:
 ├── notebooks/
 │   ├── 01_data_understanding.ipynb
 │   ├── 02_data_cleaning.ipynb
-│   ├── 03_Explaratory_Data_Analysis.ipynb
-│   └── 04_sql_analysis.ipynb
+│   └── 03_Explaratory_Data_Analysis.ipynb
 ├── reports/
 │   └──                         # Analysis reports
 ├── sql/
-│   ├── queries/                # SQL queries for analysis
+│   └── dashboard_queries.sql   # SQL queries for analysis
 ├── visualizations/
-│   ├── charts/                 # Final Dashboard
 │   └── LookerStudio/           # Final Dashboard
 └── README.md
 ```
