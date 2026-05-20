@@ -148,12 +148,20 @@ The dashboard tracks:
 
 ---
 
-## 💼 Business Implications
+## 💼 Business Impact
+
+This analysis shows how transaction data can be transformed into a monitoring layer for fraud detection and risk reporting. In a real business setting, the same logic could help teams:
 
 * Prioritizing **high-value and high-risk category transactions** can reduce financial losses
 * **Time-based monitoring systems** can improve fraud detection efficiency
 * **Merchant-level risk scoring** can help identify weak points in the transaction ecosystem
 * Geographic insights enable **targeted fraud prevention strategies**
+
+---
+
+## Dashboard Preview
+
+visualizations/LookerStudio/Credit Card Fraud Analysis Dashboard.png
 
 ---
 
@@ -171,7 +179,7 @@ jupyter notebook
 ## 👨‍💻 Author
 
 **Kenny Siwawa Chikwama**
-Focus: Data Analytics | Financial Analysis | Fraud Detection
+Focus: Data Analytics | Financial Analysis | Financial Risk Insights
 
 ---
 
