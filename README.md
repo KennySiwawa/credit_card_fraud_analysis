@@ -1,6 +1,7 @@
-# Credit Card Fraud Analysis
+## Credit Card Fraud Analysis
 
-An end-to-end analytics project that explores credit card transactions data to identify fraud patterns, quantify financial exposure, and highlight high-risk categories, merchants, states, and time periods.
+An end-to-end data analytics project that explores credit card transaction data to identify fraud patterns, quantify financial exposure, and highlight high-risk categories, merchants, states, and time periods.
+
 ---
 
 ## 🎯 Project Overview
@@ -11,7 +12,7 @@ This project analyzes traansaction-level credit card data to uncover fraud trend
 
 ## 📋 BUsiness Objectives
 
-The goal of this project is to answer key fraud-monitoring questions such as: 
+The goal of this project is to answer key fraud-monitoring questions such as: this is 
 
 * How frequent are fraudelent transactions?
 * What share of transaction value is lost to fraud?
@@ -162,6 +163,8 @@ This analysis shows how transaction data can be transformed into a monitoring la
 ## Dashboard Preview
 
 visualizations/LookerStudio/Credit Card Fraud Analysis Dashboard.png
+
+<img src="visualizations/LookerStudio/Credit-Card-Fraud-Analysis-Dashboard.png" alt="Credit Card Fraud Analysis dashboard screenshot" width="1000">
 
 ---
 
