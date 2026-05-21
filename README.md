@@ -162,8 +162,6 @@ This analysis shows how transaction data can be transformed into a monitoring la
 
 ## Dashboard Preview
 
-visualizations/LookerStudio/Credit Card Fraud Analysis Dashboard.png
-
 <img src="visualizations/LookerStudio/Credit Card Fraud Analysis Dashboard.png" alt="Credit Card Fraud Analysis dashboard screenshot" width="1000">
 
 ---
