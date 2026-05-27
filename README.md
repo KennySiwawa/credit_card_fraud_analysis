@@ -6,15 +6,15 @@ An end-to-end data analytics project that explores credit card transaction data 
 
 ## 🎯 Project Overview
 
-This project analyzes traansaction-level credit card data to uncover fraud trends and support risk-based decision-making. The workflow combines data exploration in Python, query-based analysis in Bigquery, and dashboard development in Looker Studio to turn raw transaction data into actionable fraud insights.
+This project analyzes transaction-level credit card data to uncover fraud trends and support risk-based decision-making. The workflow combines data exploration in Python, query-based analysis in Bigquery, and dashboard development in Looker Studio to turn raw transaction data into actionable fraud insights.
 
 ---
 
 ## 📋 BUsiness Objectives
 
-The goal of this project is to answer key fraud-monitoring questions such as: this is 
+The goal of this project is to answer key fraud-monitoring questions such as:
 
-* How frequent are fraudelent transactions?
+* How frequent are fraudulent transactions?
 * What share of transaction value is lost to fraud?
 * Which categories, merchants, and states show higher fraud concentration?
 * How does fraud activity change over time?
@@ -120,16 +120,6 @@ The dashboard tracks:
 * **Fraud Count by State**
 * **Monthly Fraud Count**
 * **Top High-Risk Merchants**
-
----
-
-## 📈 Key Insights
-
-* **Fraud Rate**
-* **Fraudulent Transaction Value (%)**
-* **Fraud Count by Category**
-* **Fraud by Time (Monthly Trends)**
-* **Fraud Distribution by Geography**
 
 ---
 
