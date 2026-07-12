@@ -1,0 +1,11 @@
+merchant,Total_Transactions,Fraud_Count,Fraud_Rate_Pct,Total_Amount,Fraud_Amount
+fraud_Rau and Sons,2490,49,1.97,298354.77,15299.76
+fraud_Kozey-Boehm,1866,48,2.57,183312.29,48189.98
+fraud_Cormier LLC,3649,48,1.32,265129.92,44903.89
+fraud_Vandervort-Funk,2474,47,1.9,292542.99,14973.76
+fraud_Doyle Ltd,2558,47,1.84,300971.37,14807.91
+fraud_Kilback LLC,4403,47,1.07,391078.15,13039.28
+fraud_Padberg-Welch,2424,44,1.82,279775.98,13713.45
+fraud_Kuhn LLC,3510,44,1.25,282207.15,37166.3
+fraud_Terry-Huel,1996,43,2.15,186191.02,42356.37
+fraud_Goyette Inc,1943,42,2.16,182472.25,41580.84

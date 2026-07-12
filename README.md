@@ -10,7 +10,7 @@ This project analyzes transaction-level credit card data to uncover fraud trends
 
 ---
 
-## 📋 BUsiness Objectives
+## 📋 Business Objectives
 
 The goal of this project is to answer key fraud-monitoring questions such as:
 
@@ -35,7 +35,7 @@ The dataset includes transaction-level attributes such as:
 * Merchant and category
 * State and city
 * Geographic information
-* Frad flag
+* Fraud flag
 * Risk-related engineered fields
 
 ---
@@ -57,18 +57,11 @@ The dataset includes transaction-level attributes such as:
 ├── notebooks/
 │   ├──  01_data_understanding.ipynb
 │   ├── 02_data_cleaning.ipynb
-│   └── 03_Explaratory_Data_Analysis.ipynb
+│   └── 03_Exploratory_Data_Analysis.ipynb
 ├── reports/
 │   └──                         # Analysis reports
 ├── sql/
-│   └── bigquery/
-│   │   ├── 01_kpis_bigquery.sql
-│   │   ├── 02_fraud_by_category_bigquery.sql
-│   │   ├── 03_fraud_by_state_bigquery.sql
-│   │   ├── 04_monthly_fraud_count_bigquery.sql
-│   │   ├── 05_top_high_risk_merchants_bigquery.sql
-│   │   ├── 06_filter_support_bigquery.sql
-│   │   └── 07_data_quality_checks_bigquery.sql
+│   └── dashboard_queries.sql       # BigQuery Standard SQL
 ├── visualizations/
 │   └── LookerStudio/
 │       └── Credit Card Fraud Analysis Dashboard.png
@@ -159,7 +152,7 @@ This analysis shows how transaction data can be transformed into a monitoring la
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/credit_card_fraud_analysis.git
+git clone https://github.com/KennySiwawa/credit_card_fraud_analysis.git
 cd credit_card_fraud_analysis
 pip install -r requirements.txt
 jupyter notebook
