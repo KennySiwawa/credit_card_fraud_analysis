@@ -145,6 +145,8 @@ This analysis shows how transaction data can be transformed into a monitoring la
 
 ## Dashboard Preview
 
+🔗 **[View Live Dashboard](https://datastudio.google.com/reporting/1bc92e55-9150-4513-a6e7-7be88b2b3225)**
+
 <img src="visualizations/LookerStudio/Credit Card Fraud Analysis Dashboard.png" alt="Credit Card Fraud Analysis dashboard screenshot" width="1000">
 
 ---
